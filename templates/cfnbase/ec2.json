@@ -1,0 +1,39 @@
+{
+    "Type": "AWS::EC2::Instance",
+    "Properties": {
+        "InstanceType": "t3a.nano",
+        "SecurityGroups": [
+            {
+                "Ref": "AllowSSH"
+            },
+            {
+                "Ref": "AllowHTTPandHTTPS"
+            },
+            {
+                "Ref": "AllowMYSQL"
+            }
+        ],
+        "KeyName": "pro1",
+        "Tags": [
+            {
+                "Key": "Owner",
+                "Value": "Ansible-Cloudformation"
+            }
+        ],
+        "ImageId": {
+            "Fn::FindInMap": [
+                "AWSRegionArch2AMI",
+                {
+                    "Ref": "AWS::Region"
+                },
+                {
+                    "Fn::FindInMap": [
+                        "AWSInstanceType2Arch",
+                        "t3a.nano",
+                        "Arch"
+                    ]
+                }
+            ]
+        }
+    }
+}

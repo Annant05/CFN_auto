@@ -1,0 +1,155 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "AWS CloudFormation Template EC2InstanceWithSecurityGroup: Create 4 Amazon EC2 instances.",
+    "Mappings": {
+        "AWSInstanceType2Arch": {
+            "t1.micro": {
+                "Arch": "HVM64"
+            },
+            "t2.2xlarge": {
+                "Arch": "HVM64"
+            },
+            "t2.large": {
+                "Arch": "HVM64"
+            },
+            "t2.medium": {
+                "Arch": "HVM64"
+            },
+            "t2.micro": {
+                "Arch": "HVM64"
+            },
+            "t2.nano": {
+                "Arch": "HVM64"
+            },
+            "t2.small": {
+                "Arch": "HVM64"
+            },
+            "t2.xlarge": {
+                "Arch": "HVM64"
+            },
+            "t3.2xlarge": {
+                "Arch": "HVM64"
+            },
+            "t3.large": {
+                "Arch": "HVM64"
+            },
+            "t3.medium": {
+                "Arch": "HVM64"
+            },
+            "t3.micro": {
+                "Arch": "HVM64"
+            },
+            "t3.nano": {
+                "Arch": "HVM64"
+            },
+            "t3.small": {
+                "Arch": "HVM64"
+            },
+            "t3.xlarge": {
+                "Arch": "HVM64"
+            },
+            "t3a.2xlarge": {
+                "Arch": "HVM64"
+            },
+            "t3a.large": {
+                "Arch": "HVM64"
+            },
+            "t3a.medium": {
+                "Arch": "HVM64"
+            },
+            "t3a.micro": {
+                "Arch": "HVM64"
+            },
+            "t3a.nano": {
+                "Arch": "HVM64"
+            },
+            "t3a.small": {
+                "Arch": "HVM64"
+            },
+            "t3a.xlarge": {
+                "Arch": "HVM64"
+            }
+        },
+        "AWSInstanceType2NATArch": {
+            "t1.micro": {
+                "Arch": "NATHVM64"
+            },
+            "t2.2xlarge": {
+                "Arch": "NATHVM64"
+            },
+            "t2.large": {
+                "Arch": "NATHVM64"
+            },
+            "t2.medium": {
+                "Arch": "NATHVM64"
+            },
+            "t2.micro": {
+                "Arch": "NATHVM64"
+            },
+            "t2.nano": {
+                "Arch": "NATHVM64"
+            },
+            "t2.small": {
+                "Arch": "NATHVM64"
+            },
+            "t2.xlarge": {
+                "Arch": "NATHVM64"
+            },
+            "t3.2xlarge": {
+                "Arch": "NATHVM64"
+            },
+            "t3.large": {
+                "Arch": "NATHVM64"
+            },
+            "t3.medium": {
+                "Arch": "NATHVM64"
+            },
+            "t3.micro": {
+                "Arch": "NATHVM64"
+            },
+            "t3.nano": {
+                "Arch": "NATHVM64"
+            },
+            "t3.small": {
+                "Arch": "NATHVM64"
+            },
+            "t3.xlarge": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.2xlarge": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.large": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.medium": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.micro": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.nano": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.small": {
+                "Arch": "NATHVM64"
+            },
+            "t3a.xlarge": {
+                "Arch": "NATHVM64"
+            }
+        },
+        "AWSRegionArch2AMI": {
+            "ap-southeast-1": {
+                "HVM64": "ami-061eb2b23f9f8839c"
+            },
+            "ap-south-1": {
+                "HVM64": "ami-009110a2bf8d7dd0a"
+            },
+            "us-east-1": {
+                "HVM64": "ami-04b9e92b5572fa0d1"
+            }
+        }
+    },
+    "Resources": {},
+    "Outputs": {}
+}
